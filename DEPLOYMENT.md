@@ -22,8 +22,9 @@ MINTABLE_CAW_CONTRACT=0x_contract_address
 2. Select your web service
 3. Navigate to "Environment" tab
 4. Add all the environment variables listed above
-5. Click "Save Changes"
-6. Trigger a new deploy
+5. **Important**: Render automatically sets the PORT environment variable to 10000. The app will use this automatically.
+6. Click "Save Changes"
+7. Trigger a new deploy
 
 ## Build Commands
 
@@ -34,7 +35,7 @@ yarn install
 # Build the project
 yarn build
 
-# Start production server
+# Start production server (uses PORT env var, defaults to 8082)
 yarn start
 ```
 
